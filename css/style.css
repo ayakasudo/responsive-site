@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    
+}
+
+#main-img{
+    width: 100%;
+    height: 500px;
+    background-image: url("../image/main-image.JPG");
+    background-size: cover;
+}
+
+#text{
+    text-align: center;
+    width: 100%;
+}
+
+p{
+    font-size: 14px;
+}
+
+.sections{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+
+#sections{
+    display: -webkit-flex;
+    display:         flex;
+
+    justify-content: space-between;
+}
+
+section{
+    width: 30%;
+    margin-bottom: 20px;
+    flex: 1;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+footer{
+    background-color: #fdfcf6; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.button-readmore{
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: #14c0c9;
+    border-radius: 10px;
+}
+
+.button-readmore a{
+    text-decoration: none;
+    color: white;
+}
+
+section h4{
+    text-align: center;
+}
+
+section p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+    #main-img{
+    width: 100%;
+    height: 250px;
+    background-image: url("../image/main-image.JPG");
+    background-size: cover;
+}
+
+    
+    #sections{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section{
+        width: 100%;
+    }
+}
